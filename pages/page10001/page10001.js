@@ -1,14 +1,15 @@
 var app      = getApp();
 
 var pageData = {
-  data: {"user_center1":{"type":"user-center","style":"opacity:1;color:rgb(255, 255, 255);margin-top:0;font-size:37.5rpx;height:auto;margin-left:auto;","content":"","customFeature":{"mode":1,"with-horizontal":true,"topSectionStyle":{"background-color":"","background-image":"url(https:\/\/1251027630.cdn.myqcloud.com\/1251027630\/zhichi_frontend\/static\/webapp\/images\/top_bg.jpg)"},"appendComponentAttr":{"myAddress":{"margin-top":"-1px","openVerifyPhone":false},"myOrder":{"margin-top":"-1px","openVerifyPhone":false},"shoppingCart":{"margin-top":"-1px","openVerifyPhone":false},"myMessage":{"margin-top":"-1px","openVerifyPhone":false},"vipCard":{"margin-top":"-1px","openVerifyPhone":false},"coupon":{"margin-top":"-1px","openVerifyPhone":false},"myIntegral":{"margin-top":"-1px","openVerifyPhone":false},"balance":{"margin-top":"-1px","openVerifyPhone":false}},"appendComponent":["myAddress","shoppingCart","myMessage","coupon","myIntegral","balance"]},"animations":[],"page_form":"","compId":"user_center1","parentCompid":"user_center1"},"picture2":{"type":"picture","style":"opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:164.0625rpx;width:750rpx;margin-left:auto;margin-right:auto;","content":"","customFeature":{"boxShadow":"('#000','0','0','5')","boxColor":"#000","boxX":"0","boxY":"0","boxR":"5"},"animations":[],"page_form":"","compId":"picture2","parentCompid":"picture2"},"has_tabbar":1,"page_hidden":true,"page_form":""},
+  data: {"dynamic_classify1":{"type":"dynamic-classify","style":"margin-top:0;opacity:1;height:703.125rpx;margin-left:auto;","content":[{"type":"free-vessel","style":"width:562.5rpx;height:274.21875rpx;margin-bottom:auto;margin-right:auto;opacity:1;margin-left:auto;","content":[{"type":"picture","style":"opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:239.0625rpx;width:281.25rpx;margin-left:auto;margin-right:0;margin-top:0;position:absolute;left:18.75rpx;top:9.375rpx;","content":"http:\/\/cdn.jisuapp.cn\/zhichi_frontend\/static\/webapp\/images\/default.png","customFeature":{"boxShadow":"('#000','0','0','5')","boxColor":"#000","boxX":"0","boxY":"0","boxR":"5","segment":"cover","ifMust":true},"animations":[],"compId":"data.content[0]","parentCompid":"data.content[0]"},{"type":"text","style":"background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(102, 102, 102);font-size:32.8125rpx;height:43.12499910593rpx;width:215.625rpx;line-height:44.53125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;position:absolute;left:311.71875rpx;top:21.09375rpx;margin-right:0;","content":"\u6211\u662f\u6587\u672c","customFeature":{"boxColor":"rgb(0, 0, 0)","boxR":"5","boxStyle":false,"boxX":"0","boxY":"0","action":"inner-link","inner-page-link":"prePage","segment":"title","ifMust":true},"animations":[],"compId":"data.content[1]","parentCompid":"data.content[0]","markColor":"","mode":0,"itemType":"text","itemParentType":"free-vessel","itemIndex":1,"eventParams":"{\"inner_page_link\":\"\\\/pages\\\/prePage\\\/prePage\",\"is_redirect\":0}","eventHandler":"tapInnerLinkHandler"}],"customFeature":{"boxColor":"rgb(0, 0, 0)","boxR":5,"boxStyle":false,"boxX":0,"boxY":0},"animations":[],"parentCompid":"dynamic_classify1","compId":"data.content[0]"}],"customFeature":{"form":"goods","id":"list-535370495007","height":"300px","vesselAutoheight":0,"link":"goodsDetail","dynamicClassifyGroupId":"1","autoHeight":1},"animations":[],"classifyType":"level1-vertical","classifyStyle":{"mode":0,"background-color":"#f3f4f6","selectedBackgroundColor":"#fff","width":"80px","height":"35px","line-height":"35px","margin-top":"0","opacity":"1","color":"rgb(136, 136, 136)","selectedColor":"#34b6fd","font-size":"13px","font-weight":"","font-style":"","text-decoration":"","divideLineColor":"#cecece"},"vesselStyle":{"mode":0,"margin":3,"background-color":"rgb(255, 255, 255)","background-image":"","lineBackgroundColor":"rgb(255, 255, 255)","lineBackgroundImage":"","margin-top":"0","opacity":"1"},"page_form":"","compId":"dynamic_classify1"},"has_tabbar":1,"page_hidden":true,"page_form":"","top_nav":{"navigationBarBackgroundColor":"#000000","navigationBarTextStyle":"white","navigationBarTitleText":"\u5206\u7c7b"}},
     need_login: false,
     page_router: 'page10001',
     page_form: 'none',
       list_compids_params: [],
-      user_center_compids_params: [{"compid":"user_center1","param":{"orderType":null}}],
+      user_center_compids_params: [],
       goods_compids_params: [],
   prevPage:0,
+      tostoreComps: [],
       carouselGroupidsParams: [],
       relobj_auto: [],
       bbsCompIds: [],
@@ -17,8 +18,11 @@ var pageData = {
       franchiseeComps: [],
       cityLocationComps: [],
       seckillOnLoadCompidParam: [],
-      dynamicClassifyGroupidsParams: [],
-      requesting: false,
+      dynamicClassifyGroupidsParams: [{"compid":"dynamic_classify1","dynamicClassifyGroupId":"1"}],
+      videoListComps: [],
+      videoProjectComps: [],
+      returnToVersionFlag: true,
+  requesting: false,
   requestNum: 1,
   modelChoose: [],
   modelChooseId: '',
@@ -57,11 +61,20 @@ var pageData = {
   goodsScrollFunc: function (e) {
     app.goodsScrollFunc(e);
   },
+  takeoutStyleScrollFunc: function(e){
+    app.takeoutStyleScrollFunc(e);
+  },
   franchiseeScrollFunc: function (e) {
     app.franchiseeScrollFunc(e);
   },
   seckillScrollFunc: function (e) {
     app.seckillScrollFunc(e);
+  },
+  videoScrollFunc: function (e) {
+    app.videoScrollFunc(e);
+  },
+  carouselVideoClose: function(e) {
+    app.carouselVideoClose(e);
   },
   changeCount: function (e) {
     app.changeCount(e);
@@ -174,20 +187,20 @@ var pageData = {
   deleteAllCarts: function (e) {
     app.deleteAllCarts(e);
   },
-  clickWaimaiCategory: function (e) {
-    app.clickWaimaiCategory(e);
+  clickCategory: function (e) {
+    app.clickCategory(e);
   },
-  takeoutGoodsListMinus: function (e) {
-    app.takeoutGoodsListMinus(e);
+  goodsListMinus: function (e) {
+    app.goodsListMinus(e);
   },
-  takeoutGoodsListPlus: function (e) {
-    app.takeoutGoodsListPlus(e);
+  goodsListPlus: function (e) {
+    app.goodsListPlus(e);
   },
-  takeoutCartListMinus: function (e) {
-    app.takeoutCartListMinus(e);
+  cartListMinus: function (e) {
+    app.cartListMinus(e);
   },
-  takeoutCartListPlus: function (e) {
-    app.takeoutCartListPlus(e);
+  cartListPlus: function (e) {
+    app.cartListPlus(e);
   },
   changeAssessType: function (e) {
     app.changeAssessType(e);
@@ -195,29 +208,38 @@ var pageData = {
   showShoppingCartPop: function (e) {
     app.showShoppingCartPop(e);
   },
-  hideTakeoutShoppingCart: function (e) {
-    app.hideTakeoutShoppingCart(e);
+  hideShoppingCart: function (e) {
+    app.hideShoppingCart(e);
   },
-  showTakeoutDetail: function (e) {
-    app.showTakeoutDetail(e);
+  showGoodsDetail: function (e) {
+    app.showGoodsDetail(e);
   },
-  hideTakeoutDetailPop: function (e) {
-    app.hideTakeoutDetailPop(e);
+  hideDetailPop: function (e) {
+    app.hideDetailPop(e);
   },
-  hideTakeoutModelPop: function (e) {
-    app.hideTakeoutModelPop(e);
+  hideModelPop: function (e) {
+    app.hideModelPop(e);
   },
-  chooseTakeoutModel: function (e) {
-    app.chooseTakeoutModel(e);
+  chooseModel: function (e) {
+    app.chooseModel(e);
   },
   sureChooseModel: function (e) {
     app.sureChooseModel(e);
   },
-  clickWaimaiChooseComplete: function (e) {
-    app.clickWaimaiChooseComplete(e);
+  clickChooseComplete: function (e) {
+    app.clickChooseComplete(e);
   },
   tapGoodsTradeHandler: function (e) {
     app.tapGoodsTradeHandler(e);
+  },
+  tapVideoHandler: function(e){
+    app.tapVideoHandler(e);
+  },
+  tapVideoPlayHandler: function(e){
+    app.tapVideoPlayHandler(e);  
+  },
+  tapVideoHandler: function(e){
+    app.tapVideoHandler(e);
   },
   tapInnerLinkHandler: function (e) {
     app.tapInnerLinkHandler(e);
@@ -233,6 +255,9 @@ var pageData = {
   },
   tapCommunityHandler: function (e) {
     app.tapCommunityHandler(e);
+  },
+  tapPageShareHandler:function(e) {
+    app.tapPageShareHandler(e);
   },
   turnToCommunityPage: function (e) {
     app.turnToCommunityPage(e);
@@ -334,9 +359,6 @@ var pageData = {
   tapToLuckyWheel: function (e) {
     app.tapToLuckyWheel(e);
   },
-  tapToGoldenEggs: function (e) {
-    app.tapToGoldenEggs(e);
-  },
   keywordList:{},
   bindSearchTextChange: function (e) {
     this.keywordList[e.currentTarget.dataset.compid] = e.detail.value;
@@ -347,6 +369,14 @@ var pageData = {
   },
   tapDynamicClassifyFunc: function(e){
     app.tapDynamicClassifyFunc(e);
+  },
+  // 跳转到视频详情
+  turnToVideoDetail : function(e) {
+    app.turnToVideoDetail(e);
+  },
+  // 单个视频组件播放视频
+  startPlayVideo : function(e) {
+    app.startPlayVideo(e);
   }
 };
 Page(pageData);

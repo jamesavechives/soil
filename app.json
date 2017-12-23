@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/page10000/page10000",
+    "pages/page10001/page10001",
     "pages/page10002/page10002",
     "pages/page10009/page10009",
     "pages/page10020/page10020",
-    "pages/page10001/page10001",
     "pages/page10011/page10011",
     "pages/page10015/page10015",
     "pages/page10016/page10016",
@@ -85,20 +85,20 @@
         {
             "iconPath": "images/5a0c623918842.png",
             "selectedIconPath": "images/5a0c623918890.png",
-            "text": "案例",
-            "pagePath": "pages/page10015/page10015"
+            "text": "产品",
+            "pagePath": "pages/page10001/page10001"
         },
         {
             "iconPath": "images/5a0c62393c100.png",
             "selectedIconPath": "images/5a0c62393c14f.png",
-            "text": "关于",
-            "pagePath": "pages/page10014/page10014"
+            "text": "工程案例",
+            "pagePath": "pages/page10015/page10015"
         },
         {
             "iconPath": "images/5a0c623956c5b.png",
             "selectedIconPath": "images/5a0c623956ca9.png",
-            "text": "我的",
-            "pagePath": "pages/page10001/page10001"
+            "text": "关于创高",
+            "pagePath": "pages/page10014/page10014"
         }
     ]
     },

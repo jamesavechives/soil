@@ -5241,7 +5241,7 @@ App({
 
   globalData:{
     appId: 'cOk7u3oknp',
-        tabBarPagePathArr: '["/pages/page10000/page10000","/pages/page10020/page10020","/pages/tabbarShoppingCart/tabbarShoppingCart","/pages/page10002/page10002"]',
+        tabBarPagePathArr: '["/pages/page10000/page10000","/pages/page10001/page10001","/pages/page10015/page10015","/pages/page10014/page10014"]',
         homepageRouter: 'page10000',
     formData: null,
     userInfo: {},
