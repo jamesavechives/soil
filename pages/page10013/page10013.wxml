@@ -1,0 +1,164 @@
+<view class="app" hidden="{{page_hidden}}">
+<template name="zcFormVessel1">
+  <form class="element form-vessel" data-form="{{data.form}}" style="{{data.style}}"
+        bindsubmit="submitForm"
+        data-compid="form_vessel1"
+        data-fieldinfo="{{data.field_info}}">
+    <wxs module="textWxsModule">
+var isArray = function(array) {
+  return array instanceof Array;
+}
+module.exports.isArray = isArray;
+</wxs>
+<import src="../../components/wxParse/wxParse.wxml"/>
+<template name="zcText">
+  <block wx:if="{{real_value}}">
+    <block wx:if="{{textWxsModule.isArray(real_value)}}">
+      <view class="element text" style="{{data.style}}" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">
+        <block wx:if="{{ parent_form === 'form' }}">
+          {{ real_value }}
+        </block>
+        <block wx:else>
+          <view class="wxParse">
+            <template is="wxParse" data="{{wxParseData: real_value}}"/>
+          </view>
+        </block>
+      </view>
+    </block>
+    <block wx:else>
+      <text class="element text" style="{{data.style}}" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">{{real_value}}</text>
+    </block>
+  </block>
+  <block wx:elif="{{data.customFeature.segment == 'default_map' && form_data}}" >
+  <!-- 动态列表绑定地图 -->
+    <text class="element text" style="{{data.style}}" data-latitude="{{form_data.region_lat}}" data-longitude="{{form_data.region_lng}}" data-address="{{(form_data.region_string || '') + (form_data.region_detail || '')}}" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">{{(form_data.region_string || '') + (form_data.region_detail || '')}}</text>
+  </block>
+  <block wx:elif="{{data.customFeature.segment == 'default_map'}}" >
+  <!-- 详情页绑定地图 -->
+    <text class="element text" style="{{data.style}}" data-latitude="{{detail_data.region_lat}}" data-longitude="{{detail_data.region_lng}}" data-address="{{(detail_data.region_string || '') + (detail_data.region_detail || '')}}" catchtap="textToMap">{{(detail_data.region_string || '') + (detail_data.region_detail || '')}}</text>
+  </block>
+  <block wx:else>
+    <text class="element text" style="{{data.style}}" data-event-params="{{data.eventParams}}" catchtap="{{data.eventHandler}}">{{data.content}}</text>
+  </block>
+</template>
+<view class="ele-container">
+  <block wx:if="{{data.content[0].customFeature.segment == 'default_map'}}">
+  <!-- 动态列表,动态容器 与详情页绑定地图 -->
+    <template is="zcText" data="{{data:data.content[0], form_data: item.form_data, detail_data: detail_data}}"></template>
+  </block>
+  <block wx:elif="{{real_value}}">
+    <template is="zcText" data="{{data:data.content[0], detail_data: detail_data}}"></template>
+  </block>
+  <block wx:elif="{{detail_data && in_dynamic_vessel !== 'true'}}">
+    <template is="zcText" data="{{data:data.content[0], detail_data: detail_data}}"></template>
+  </block>
+  <block wx:elif="{{in_dynamic_vessel === 'true'}}">
+    <template is="zcText" data="{{data:data.content[0], detail_data: detail_data}}"></template>
+  </block>
+  <block wx:else>
+    <template is="zcText" data="{{data:data.content[0], detail_data: detail_data}}"></template>
+  </block>
+</view>
+
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[1]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[2]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[3]}}"></template>
+</view>
+<template name="zcTextareaEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element textarea-ele js-form-ele must" style="{{data.style}}">
+      <textarea placeholder="{{!!data.customFeature.placeholder ? data.customFeature.placeholder: ''}}"
+              data-segment="{{data.customFeature.segment}}"
+              data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+              maxlength="-1"
+              bindinput="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element textarea-ele js-form-ele" style="{{data.style}}">
+      <textarea placeholder="{{!!data.customFeature.placeholder ? data.customFeature.placeholder: ''}}"
+              data-segment="{{data.customFeature.segment}}"
+              data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+              maxlength="-1"
+              bindinput="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcTextareaEle" data="{{data:data.content[4], detail_data: detail_data}}"></template>
+</view>
+<template name="zcFormButton">
+  <button class="button background-ele" style="{{data.style}}" form-type="submit">
+    {{data.content}}
+  </button>
+</template>
+<view class="ele-container">
+  <template is="zcFormButton" data="{{data:data.content[5]}}"></template>
+</view>
+
+  </form>
+</template>
+<view class="ele-container">
+  <template is="zcFormVessel1" data="{{data:form_vessel1}}"></template>
+</view>
+
+</view>
