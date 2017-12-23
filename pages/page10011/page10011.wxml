@@ -50,8 +50,12 @@ module.exports.isArray = isArray;
   <block wx:else>
     <template is="zcPicture" data="{{data:picture2, detail_data: detail_data}}"></template>
   </block>
-</view><view class="ele-container">
+</view>
+<view class="ele-container">
   <template is="zcTitle" data="{{data:title_ele3, detail_data: detail_data}}"></template>
+</view>
+<view class="ele-container">
+<template is="zcPicture" data="{{data:picture3, detail_data: detail_data}}"></template>
 </view>
 <wxs module="textWxsModule">
 var isArray = function(array) {

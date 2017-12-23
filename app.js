@@ -5263,8 +5263,8 @@ App({
     goodsAdditionalInfo: {},  
     urlLocationId:'',
     wxParseOldPattern: '_listVesselRichText_',
- //   siteBaseUrl:'https://343259329.jameswalstonn.com/22',
-    siteBaseUrl: 'https://1u66skdz.qcloud.la/22',
+    siteBaseUrl:'https://343259329.jameswalstonn.com/22',
+ //   siteBaseUrl: 'https://1u66skdz.qcloud.la/22',
     appTitle: '土工材料',
     appDescription: '土工材料生产基地',
     appLogo: 'http://wafer-1255553410.cos.ap-guangzhou.myqcloud.com/abc/9aecd69d94057e37bcff38200ffda452-logo.JPG'

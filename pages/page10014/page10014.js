@@ -5,7 +5,7 @@ var pageData = {
     "picture1": {
         "type": "picture",
         "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:351.5625rpx;width:750rpx;margin-left:auto;margin-right:auto;",
-        "content": "http://img.weiye.me/zcimgdir/album/file_5965c5022329c.png",
+        "content": "http://wafer-1255727824.cos.ap-guangzhou.myqcloud.com/abc/a99dc2f44087d2304e34c3d8adc0007d-aboutus2.jpg",
         "customFeature": {
             "boxShadow": "('#000','0','0','5')",
             "boxColor": "#000",
@@ -20,20 +20,19 @@ var pageData = {
     },
     "free_vessel2": {
         "type": "free-vessel",
-        "style": "width:750rpx;height:585.9375rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:23.4375rpx;opacity:1;margin-left:auto;",
+        "style": "width:750rpx;height:1000.9375rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:23.4375rpx;opacity:1;margin-left:auto;",
         "content": [
             {
                 "type": "text",
                 "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(102, 102, 102);font-size:35.8125rpx;height:44.270834326744rpx;width:691.40625rpx;line-height:44.53125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;position:absolute;left:29.296875rpx;top:23.4375rpx;margin-right:0;right:auto;",
-                "content": "            深圳市蓝色理想开发有限公司  \n\
-\n\
-    专业提供小程序开发设计服务。自主开发不同行业100多套模板，涵盖电商、金融、房地产、餐饮、服装及各类线下实体店。\n\
-\n\
-\n\
-    联系人  ： 钱生\n\
-    手机    ： 15219507490\n\
-    电话    ： 0755-84876144\n\
-    ",
+                "content": "        南昌创高工程材料有限公司是座落在中国军旗升起的地方——英雄城南昌。是一家专业生产销售土工格栅、土工布、土工膜、土工网垫、土工格室、防水板、防水卷材、透水管、止水条、排水板，止水带等土工合成材料民营企业，满足国内外工程对该产品的要求。主要用于公路、铁路、水利、电力环保、市政等建设领域，以优质的服务获得市场。公司成立以来，本着“诚信为本”的朴素经营理念，严格按照现代化企业模式进行管理运营，以务实创新的精神不断进行开拓时间和探索进取。\n\
+\n\n\
+        厂址：江西省南昌市安义县工业园东阳大道18号 \n\n\
+        经营部地址：江西省南昌市青云谱区世纪欧美中心A座1002室\n\n\
+        电话：0791-88210163、0791-86506851\n\n\
+        手机：13755606671、15879121150\n\n\
+        邮箱：az108@163.com\n\n\
+        ",
                 "customFeature": {
                     "boxColor": "rgb(0, 0, 0)",
                     "boxR": "5",
@@ -62,24 +61,24 @@ var pageData = {
     "map3": {
         "type": "map",
         "style": "color:rgb(102, 102, 102);font-size:32.8125rpx;height:398.4375rpx;margin-left:auto;margin-right:0;margin-top:23.4375rpx;text-align:left;width:750rpx;",
-        "content": "    中国广东省深圳市南山区科技园",
+        "content": "    江西省南昌市安义县工业园东阳大道18号",
         "customFeature": {
-            "address": "    中国广东省深圳市南山区科技园",
+            "address": "    江西省南昌市安义县工业园东阳大道18号",
             "type": "withmap",
-            "lat": 22.539511691304,
-            "lng": 114.0898706764,
-            "text": "   中国广东省深圳市南山区科技园",
+            "lat": 38.6518,
+            "lng": 104.07642,
+            "text": "   江西省南昌市安义县工业园东阳大道18号",
             "map_height": 170,
             "map_width": 320,
             "markers": [
                 {
-                    "latitude": 22.539511691304,
-                    "longitude": 114.0898706764,
-                    "name": "   中国广东省深圳市南山区科技园",
-                    "desc": "   中国广东省深圳市南山区科技园"
+                    "latitude": 38.6518,
+                    "longitude": 104.07642,
+                    "name": "   江西省南昌市安义县工业园东阳大道18号",
+                    "desc": "   江西省南昌市安义县工业园东阳大道18号"
                 }
             ],
-            "markers_json_str": "[{\"latitude\":22.5564200000,\"longitude\":113.9466400000,\"name\":\"  中国广东省深圳市南山区科技园\",\"desc\":\"  中国广东省深圳市南山区科技园\"}]"
+            "markers_json_str": "[{\"latitude\":38.6518,\"longitude\":104.07642,\"name\":\"  江西省南昌市安义县工业园东阳大道18号\",\"desc\":\"  江西省南昌市安义县工业园东阳大道18号\"}]"
         },
         "animations": [],
         "page_form": "",
@@ -93,7 +92,7 @@ var pageData = {
             {
                 "type": "button",
                 "style": "background-color:#34b6fd;border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(255, 255, 255);font-size:32.8125rpx;height:70.312504470348rpx;line-height:70.312504470348rpx;margin-left:auto;margin-right:0;margin-top:0;opacity:1;text-align:center;width:703.125rpx;position:absolute;left:23.4375rpx;top:39.84375rpx;right:auto;",
-                "content": "联系我们",
+                "content": "立即拨打电话",
                 "customFeature": {
                     "boxColor": "rgb(0, 0, 0)",
                     "boxR": "5px",
@@ -101,7 +100,7 @@ var pageData = {
                     "boxX": "0",
                     "boxY": "0",
                     "action": "call",
-                    "phone-num": "0755"
+                    "phone-num": "0791-88210163"
                 },
                 "animations": [],
                 "compId": "data.content[0]",
@@ -109,7 +108,7 @@ var pageData = {
                 "itemType": "button",
                 "itemParentType": "free-vessel",
                 "itemIndex": 0,
-                "eventParams": "{\"phone_num\":\"0755-84876144\"}",
+                "eventParams": "{\"phone_num\":\"0791-88210163\"}",
                 "eventHandler": "tapPhoneCallHandler"
             }
         ],

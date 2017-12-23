@@ -187,7 +187,7 @@ var pageData = {
             {
                 "type": "text",
                 "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(102, 102, 102);font-size:30.46875rpx;height:44.53125rpx;line-height:44.53125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;position:absolute;left:30.46875rpx;top:154.6875rpx;margin-right:0;",
-                "content": "制作流程",
+                "content": "生产设备",
                 "customFeature": {
                     "boxColor": "rgb(0, 0, 0)",
                     "boxR": "5",
@@ -314,7 +314,7 @@ var pageData = {
             {
                 "type": "text",
                 "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(102, 102, 102);font-size:32.8125rpx;font-weight:bold;height:44.53125rpx;line-height:44.53125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;position:absolute;left:93.75rpx;top:21.09375rpx;margin-right:0;",
-                "content": "服务项目",
+                "content": "推荐产品",
                 "customFeature": {
                     "boxColor": "rgb(0, 0, 0)",
                     "boxR": "5",
@@ -398,7 +398,7 @@ var pageData = {
             {
                 "type": "text",
                 "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(102, 102, 102);font-size:32.8125rpx;font-weight:bold;height:44.53125rpx;line-height:44.53125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;position:absolute;left:93.75rpx;top:21.09375rpx;margin-right:0;",
-                "content": "公司案例",
+                "content": "工程案例",
                 "customFeature": {
                     "boxColor": "rgb(0, 0, 0)",
                     "boxR": "5",
@@ -424,111 +424,41 @@ var pageData = {
         "page_form": "",
         "compId": "free_vessel5"
     },
-    "free_vessel6": {
-        "type": "free-vessel",
-        "style": "width:750rpx;height:457.03125rpx;background-color:rgb(255, 255, 255);margin-bottom:auto;margin-right:auto;margin-top:2.34375rpx;opacity:1;margin-left:auto;",
-        "content": [
-            {
-                "type": "picture",
-                "style": "opacity:1;background-color:transparent;border-color:rgb(204, 204, 204);border-style:none;height:375rpx;width:304.6875rpx;margin-left:auto;margin-right:0;margin-top:0;position:absolute;left:23.4375rpx;top:11.71875rpx;",
-                "content": "http://img.weiye.me/zcimgdir/album/file_59649e58a27c1.png",
-                "customFeature": {
-                    "boxShadow": "('#000','0','0','5')",
-                    "boxColor": "#000",
-                    "boxX": "0",
-                    "boxY": "0",
-                    "boxR": "5",
-                    "action": "inner-link",
-                    "inner-page-link": "page10017"
-                },
-                "animations": [],
-                "compId": "data.content[0]",
-                "parentCompid": "free_vessel6",
-                "itemType": "picture",
-                "itemParentType": "free-vessel",
-                "itemIndex": 0,
-                "eventParams": "{\"inner_page_link\":\"\\/pages\\/page10017\\/page10017\",\"is_redirect\":0}",
-                "eventHandler": "tapInnerLinkHandler"
-            },
-            {
-                "type": "picture",
-                "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:175.78125rpx;width:375rpx;margin-left:auto;margin-right:0;margin-top:0;position:absolute;left:351.5625rpx;top:11.71875rpx;",
-                "content": "http://img.weiye.me/zcimgdir/album/file_59649ff16d242.png",
-                "customFeature": {
-                    "boxShadow": "('#000','0','0','5')",
-                    "boxColor": "#000",
-                    "boxX": "0",
-                    "boxY": "0",
-                    "boxR": "5",
-                    "action": "inner-link",
-                    "inner-page-link": "page10017"
-                },
-                "animations": [],
-                "compId": "data.content[1]",
-                "parentCompid": "free_vessel6",
-                "itemType": "picture",
-                "itemParentType": "free-vessel",
-                "itemIndex": 1,
-                "eventParams": "{\"inner_page_link\":\"\\/pages\\/page10017\\/page10017\",\"is_redirect\":0}",
-                "eventHandler": "tapInnerLinkHandler"
-            },
-            {
-                "type": "picture",
-                "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:175.78125rpx;width:375rpx;margin-left:auto;margin-right:0;margin-top:0;position:absolute;left:351.5625rpx;top:210.9375rpx;",
-                "content": "http://img.weiye.me/zcimgdir/album/file_5965c2a6321c6.png",
-                "customFeature": {
-                    "boxShadow": "('#000','0','0','5')",
-                    "boxColor": "#000",
-                    "boxX": "0",
-                    "boxY": "0",
-                    "boxR": "5",
-                    "action": "inner-link",
-                    "inner-page-link": "page10017"
-                },
-                "animations": [],
-                "compId": "data.content[2]",
-                "parentCompid": "free_vessel6",
-                "itemType": "picture",
-                "itemParentType": "free-vessel",
-                "itemIndex": 2,
-                "eventParams": "{\"inner_page_link\":\"\\/pages\\/page10017\\/page10017\",\"is_redirect\":0}",
-                "eventHandler": "tapInnerLinkHandler"
-            },
-            {
-                "type": "text",
-                "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(153, 153, 153);font-size:30.46875rpx;height:44.53125rpx;line-height:44.53125rpx;margin-left:auto;margin-top:0;opacity:1;text-align:left;position:absolute;left:574.21875rpx;top:398.4375rpx;margin-right:0;",
-                "content": "查看更多",
-                "customFeature": {
-                    "boxColor": "rgb(0, 0, 0)",
-                    "boxR": "5",
-                    "boxStyle": false,
-                    "boxX": "0",
-                    "boxY": "0",
-                    "action": "inner-link",
-                    "inner-page-link": "page10017"
-                },
-                "animations": [],
-                "compId": "data.content[3]",
-                "parentCompid": "free_vessel6",
-                "markColor": "",
-                "mode": 0,
-                "itemType": "text",
-                "itemParentType": "free-vessel",
-                "itemIndex": 3,
-                "eventParams": "{\"inner_page_link\":\"\\/pages\\/page10017\\/page10017\",\"is_redirect\":0}",
-                "eventHandler": "tapInnerLinkHandler"
-            }
-        ],
+    "goods_list6": {
+        "type": "goods-list",
+        "style": "background-color:rgb(243, 243, 243);opacity:1;color:rgb(102, 102, 102);font-size:32.8125rpx;height:auto;margin-left:auto;",
+        "content": "",
         "customFeature": {
-            "boxColor": "rgb(0, 0, 0)",
-            "boxR": 5,
-            "boxStyle": false,
-            "boxX": 0,
-            "boxY": 0
+            "lineBackgroundColor": "rgb(255, 255, 255)",
+            "lineBackgroundImage": "",
+            "margin": 0,
+            "lineHeight": 200,
+            "imgWidth": 140,
+            "imgHeight": 140,
+            "vesselAutoheight": 1,
+            "height": "468.75rpx",
+            "form": "goods",
+            "mode": 1,
+            "name": "商品列表",
+            "ifUseContact": true,
+            "isIntegral": false,
+            "isHideSales": false,
+            "isHideStock": false,
+            "isShoppingCart": false,
+            "isBuyNow": false,
+            "id": "list-207793355687",
+            "source": "250909"
         },
         "animations": [],
         "page_form": "",
-        "compId": "free_vessel6"
+        "compId": "goods_list6",
+        "parentCompid": "goods_list6",
+        "list_style": "background-color:rgb(255, 255, 255);height:468.75rpx;margin-left:auto;",
+        "img_style": "width:468.75rpx;height:468.75rpx;margin-left:auto;",
+        "title_width": {
+            "width": "328.125rpx"
+        },
+        "param": "{\"id\":\"list-207793355687\",\"form\":\"anli\",\"goods_type\":0,\"page\":1,\"app_id\":\"cOk7u3oknp\",\"is_count\":0,\"is_integral\":0,\"idx_arr\":{\"idx\":\"category\",\"idx_value\":\"36\"}}"
     },
     "free_vessel7": {
         "type": "free-vessel",
@@ -831,7 +761,7 @@ need_login: false,
     page_form: 'none',
       list_compids_params: [],
       user_center_compids_params: [],
-      goods_compids_params: [{"compid":"goods_list4","param":{"id":"list-179050927982","cate-type":"recommend","form":"goods","goods_type":0,"page":1,"app_id":"cOk7u3oknp","is_count":0,"is_integral":0,"idx_arr":{"idx":"category","idx_value":"250910"}}}],
+      goods_compids_params: [{"compid":"goods_list4","param":{"id":"list-179050927982","cate-type":"recommend","form":"goods","goods_type":0,"page":1,"app_id":"cOk7u3oknp","is_count":0,"is_integral":0,"idx_arr":{"idx":"category","idx_value":"250910"}}},{"compid":"goods_list6","param":{"id":"list-207793355687","cate-type":"none","form":"goods","goods_type":0,"page":1,"app_id":"cOk7u3oknp","is_count":0,"is_integral":0,"idx_arr":{"idx":"category","idx_value":"36"}}}],
   prevPage:0,
       carouselGroupidsParams: [{"compid":"carousel1","carouselgroupId":"52908"}],
       relobj_auto: [],

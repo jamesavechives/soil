@@ -5,7 +5,7 @@ var pageData = {
     "title_ele1": {
         "type": "title-ele",
         "style": "opacity:1;line-height:70.3125rpx;background-color:rgb(255, 255, 255);border-color:rgb(34, 34, 34);border-style:none;color:#666;font-size:35.15625rpx;margin-left:auto;margin-right:auto;margin-top:11.71875rpx;",
-        "content": "设计流程",
+        "content": "土工布",
         "customFeature": {
             "mode": 1,
             "markColor": "rgb(45, 178, 255)",
@@ -24,8 +24,8 @@ var pageData = {
     },
     "picture2": {
         "type": "picture",
-        "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:304.6875rpx;width:750rpx;margin-left:auto;margin-right:auto;",
-        "content": "http://wafer-1255714686.cos.ap-guangzhou.myqcloud.com/abc/1288a53583fa4d989524cf77285c344a-process.JPG",
+        "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:400rpx;width:450rpx;margin-left:auto;margin-right:auto;",
+        "content": "http://wafer-1255727824.cos.ap-guangzhou.myqcloud.com/abc/3e3df7fcac563335ec9055fcebea017c-1.jpg",
         "customFeature": {
             "boxShadow": "('#000','0','0','5')",
             "boxColor": "#000",
@@ -41,7 +41,7 @@ var pageData = {
     "title_ele3": {
         "type": "title-ele",
         "style": "opacity:1;line-height:70.3125rpx;background-color:rgb(255, 255, 255);border-color:rgb(34, 34, 34);border-style:none;color:#666;font-size:35.15625rpx;margin-left:auto;margin-right:auto;margin-top:11.71875rpx;",
-        "content": "自己发布修改小程序",
+        "content": "塑料格栅",
         "customFeature": {
             "mode": 1,
             "markColor": "rgb(45, 178, 255)",
@@ -58,27 +58,21 @@ var pageData = {
         "markColor": "rgb(45, 178, 255)",
         "mode": 1
     },
-    "text4": {
-        "type": "text",
-        "style": "background-color:rgba(0, 0, 0, 0);border-color:rgb(34, 34, 34);border-style:none;border-width:4.6875rpx;color:rgb(102, 102, 102);font-size:32.8125rpx;height:44.53125rpx;width:703.125rpx;line-height:44.53125rpx;margin-left:auto;margin-top:11.71875rpx;opacity:1;text-align:left;margin-right:auto;",
-        "content": "    打开微信web开发者工具，点击+号，开始创建一个小程序。\n  创建一个小程序项目需要：项目命名、小程序的Appid、配置本地开发目录。一个三个步骤。/n\n\
-    小程序的APPID需要打开浏览器，登陆网页版微信小程序管理后台。设置-开发设置-复制AppID。\n\
-    配置小程序项目的本地目录,后导入小程序源码\n\
-    找到创建的小程序本地开发目录。打开微信web开发者工具-项目-预览-扫码-编辑。就可以看见网站上面展示的小程序DEMO了。\n\
-    用鼠标或者手机点击小程序模版里面的控件链接测试一下，进而根据需求对模版源码进行自定义更改、学习、化他为己用。",
+    "picture3": {
+        "type": "picture",
+        "style": "opacity:1;background-color:transparent;border-color:rgb(34, 34, 34);border-style:none;height:400rpx;width:450rpx;margin-left:auto;margin-right:auto;",
+        "content": "http://wafer-1255727824.cos.ap-guangzhou.myqcloud.com/abc/ad8099197bc0388721821ade17674428-2.jpg",
         "customFeature": {
-            "boxColor": "rgb(0, 0, 0)",
-            "boxR": "5",
-            "boxStyle": false,
+            "boxShadow": "('#000','0','0','5')",
+            "boxColor": "#000",
             "boxX": "0",
-            "boxY": "0"
+            "boxY": "0",
+            "boxR": "5"
         },
         "animations": [],
         "page_form": "",
-        "compId": "text4",
-        "parentCompid": "text4",
-        "markColor": "",
-        "mode": 0
+        "compId": "picture3",
+        "parentCompid": "picture3"
     },
     "has_tabbar": 0,
     "page_hidden": true,
